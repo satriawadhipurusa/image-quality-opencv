@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="video" style="display: none;"></video>
+    <canvas id="canvasOutput" width=320 height=240></canvas>
+    <canvas id="canvasOutput2" width=320 height=240></canvas>
+    <canvas id="canvasOutput3" width=320 height=240></canvas>
+    <script src="js/index.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+        var featuresReady = checkFeatures(document.getElementById("info"), {webrtc: true});
+    </script>
+    <script async src="js/opencv.js" onload="opencvIsReady()"></script>
+</body>
+</html>
